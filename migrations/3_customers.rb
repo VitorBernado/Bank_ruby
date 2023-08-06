@@ -2,11 +2,11 @@ require 'sequel'
 
 Sequel.migration do
     change do
-        create_table(:cusromers) do
+        create_table(:customers) do
             primary_key :id
             foreign_key :city_id, :cities
             String :name, size: 100, null: false
-            Integer :document, size: 15, null: false, uniq: true
+            String :document, size: 15, null: false, uniq: true
             String :public_place, null: false
             Integer :number, size: 10, null: false
             String :neighborhood, null: false

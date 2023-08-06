@@ -1,6 +1,7 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    rainbow (3.1.1)
     sequel (5.70.0)
     sqlite3 (1.6.3-x86_64-linux)
 
@@ -8,6 +9,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  rainbow (~> 3.1)
   sequel (~> 5.70)
   sqlite3 (~> 1.6)
 
